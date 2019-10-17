@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Services" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6da82f7-2dd4-4b46-ac41-8c2587115988" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="Services" pattern="src:com.lo54.project.service.*" />
+  </component>
+  <component name="ProjectId" id="1RGsv74FGOKECULuqqBjkxyqDu7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProjectApplication">
+    <configuration name="ProjectApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lo54project" />
+      <extension name="coverage" track_test_folders="true" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="com.lo54.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="true" />
+        <option name="IS_SUBST" value="true" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+          <ENTRY IS_ENABLED="true" PARSER="env" PATH=".env" />
+        </ENTRIES>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lo54.project" />
+      <option name="MAIN_CLASS_NAME" value="com.lo54.project.ProjectApplicationTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lo54project_GraphQL" />
+      <extension name="coverage" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="com.lo54.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="true" />
+        <option name="IS_SUBST" value="true" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+          <ENTRY IS_ENABLED="true" PARSER="env" PATH=".env" />
+        </ENTRIES>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lo54.project.ProjectApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ProjectApplicationTests" />
+      <item itemvalue="Spring Boot.ProjectApplication" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@daacc413" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@daacc413" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@39f6c16a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SpringBeansView">
+    <option name="showFilesets" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6da82f7-2dd4-4b46-ac41-8c2587115988" name="Default Changelist" comment="" />
+      <created>1569304994768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569304994768</updated>
+      <workItem from="1569304997010" duration="10369000" />
+      <workItem from="1569420558503" duration="2895000" />
+      <workItem from="1569444707236" duration="522000" />
+      <workItem from="1569480033509" duration="638000" />
+      <workItem from="1569480988796" duration="163000" />
+      <workItem from="1569481395393" duration="125000" />
+      <workItem from="1569481549884" duration="691000" />
+      <workItem from="1569487018225" duration="24000" />
+      <workItem from="1569487052443" duration="359000" />
+      <workItem from="1569491787093" duration="3000" />
+      <workItem from="1569498174797" duration="3967000" />
+      <workItem from="1569503355780" duration="82000" />
+      <workItem from="1569505290430" duration="5805000" />
+      <workItem from="1569520783026" duration="5386000" />
+      <workItem from="1569535859145" duration="3081000" />
+      <workItem from="1569565269846" duration="7842000" />
+      <workItem from="1569579465827" duration="6548000" />
+      <workItem from="1569650819257" duration="4623000" />
+      <workItem from="1569671796282" duration="1292000" />
+      <workItem from="1569746255002" duration="5283000" />
+      <workItem from="1569764026721" duration="4726000" />
+      <workItem from="1569784483035" duration="3141000" />
+      <workItem from="1569833659402" duration="5136000" />
+      <workItem from="1569885961086" duration="2269000" />
+      <workItem from="1569888928279" duration="596000" />
+      <workItem from="1569890473106" duration="4000" />
+      <workItem from="1569946039066" duration="637000" />
+      <workItem from="1569957372501" duration="673000" />
+      <workItem from="1569959248866" duration="3691000" />
+      <workItem from="1569996503122" duration="5848000" />
+      <workItem from="1570005291634" duration="3873000" />
+      <workItem from="1570113798308" duration="146000" />
+      <workItem from="1570259025528" duration="255000" />
+      <workItem from="1570260656536" duration="5000" />
+      <workItem from="1570361220996" duration="2955000" />
+      <workItem from="1570457180194" duration="3000" />
+      <workItem from="1570531542652" duration="98000" />
+      <workItem from="1570531826957" duration="289000" />
+      <workItem from="1570532213628" duration="15135000" />
+      <workItem from="1570650902915" duration="4249000" />
+      <workItem from="1570687740108" duration="75000" />
+      <workItem from="1570690459848" duration="1801000" />
+      <workItem from="1570707304213" duration="1273000" />
+      <workItem from="1570708972925" duration="1241000" />
+      <workItem from="1570826690807" duration="356000" />
+      <workItem from="1570889113789" duration="337000" />
+      <workItem from="1570900864883" duration="500000" />
+      <workItem from="1570904461044" duration="241000" />
+      <workItem from="1570959118846" duration="768000" />
+      <workItem from="1570989053614" duration="203000" />
+      <workItem from="1570990557584" duration="1193000" />
+      <workItem from="1571320171553" duration="2062000" />
+      <workItem from="1571322852611" duration="1000" />
+      <workItem from="1571323509468" duration="2171000" />
+      <workItem from="1571326495190" duration="343000" />
+      <workItem from="1571327048853" duration="41000" />
+      <workItem from="1571327095386" duration="343000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.graphqls" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+</project>
