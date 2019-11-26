@@ -29,7 +29,7 @@ public class ProjectApplicationTests {
     @Test
     public void getLocationsTest(){
         when(locationRepository.findAll()).thenReturn(Stream.of(
-                new Location(1L,"Belfort"), new Location(2L,"Mulhouse")).collect(Collectors.toList()));
+                new Location(1L,"Belfort", null), new Location(2L,"Mulhouse", null)).collect(Collectors.toList()));
         assertEquals(2, locationService.findAll().size());
 
     }

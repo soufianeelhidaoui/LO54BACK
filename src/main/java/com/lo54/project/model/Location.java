@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,9 +18,13 @@ import javax.validation.constraints.NotNull;
 public class Location {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idLocation;
     @NotNull
     private String city;
 
+    //------------
+    @OneToMany(mappedBy="location", fetch = FetchType.EAGER)
+    private List<CourseSession> courseSession ;
+    //------------
 }

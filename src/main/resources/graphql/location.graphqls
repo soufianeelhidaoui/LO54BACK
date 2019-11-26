@@ -6,14 +6,15 @@ schema {
 type Location{
     idLocation: ID!
     city: String
+    courseSession: [CourseSession]
 }
 
-type Query{
+extend type Query{
     getLocations: [Location]
     getLocation(id: ID!): Location
 }
 
-type Mutation{
+extend type Mutation{
     newLocation(city: String): Location
     updateLocation(id: ID!, city: String): Location
     deleteLocation(id: ID!): Boolean

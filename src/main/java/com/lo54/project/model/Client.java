@@ -18,7 +18,7 @@ import java.util.List;
 public class Client {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idClient;
     @NotNull
     private String firstName;
@@ -32,7 +32,8 @@ public class Client {
     private String email;
 
     //------------
-    @OneToMany(mappedBy = "client", fetch = FetchType.LAZY)
-    private List<CourseSession> courseSessions;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "courseSessionId", nullable = false, updatable = false)
+    private CourseSession courseSession;
     //------------
 }

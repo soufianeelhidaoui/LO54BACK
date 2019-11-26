@@ -6,6 +6,7 @@ import com.lo54.project.repository.ClientRepository;
 import com.lo54.project.repository.CourseSessionRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -19,11 +20,20 @@ public class ClientService {
 
     /**
      * Add new client
-     * @param client
+     * @param {final String lastName,final String firstName,final String address,final String phone,final String email,final Long courseSessionId}
      * @return Client
      */
-    public Client create(Client client){
-        return repository.save(client);
+    @Transactional
+    public Client createClient(final String lastName,final String firstName,final String address,final String phone,final String email,final Long courseSessionId) {
+        Client client = new Client();
+        client.setLastName(lastName);
+        client.setFirstName(firstName);
+        client.setAddress(address);
+        client.setPhone(phone);
+        client.setEmail(email);
+        client.setCourseSession(new CourseSession(courseSessionId));
+        repository.save(client);
+        return client;
     }
 
     /**
@@ -38,7 +48,7 @@ public class ClientService {
         record.setAddress(client.getAddress());
         record.setPhone(client.getPhone());
         record.setEmail(client.getEmail());
-        record.setCourseSessions(client.getCourseSessions());
+        record.setCourseSession(client.getCourseSession());
         return repository.save(record);
     }
 
@@ -67,15 +77,4 @@ public class ClientService {
         return repository.findById(id).get();
     }
 
-    /**
-     * Register a client in a session
-     * @param idClient
-     * @param courseSession
-     * @return Client
-     */
-    public Client registerInSession(Long idClient, CourseSession courseSession){
-        Client record = repository.findById(idClient).get();
-        record.getCourseSessions().add(courseSession);
-        return repository.save(record);
-    }
 }

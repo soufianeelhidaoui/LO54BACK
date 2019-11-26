@@ -1,0 +1,20 @@
+type CourseSession{
+    idCourseSession: ID!
+    startDate: String
+    endDate: String
+    max: Int
+    location: Location
+    course: Course
+    client: [Client]
+}
+
+
+type Query{
+    getCourseSessions: [CourseSession]
+    getCourseSession(idCourseSession: ID): CourseSession
+
+    getCourseByFilterCourse(course: String): [CourseSession]
+    getCourseByFilterCourseAndDate(course: String, date1: String,date2: String): [CourseSession]
+    getCourseByFilterCourseAndLocation(course: String, city: String): [CourseSession]
+    getCourseByFilterAll(course: String,date1: String,date2: String,city: String): [CourseSession]
+}

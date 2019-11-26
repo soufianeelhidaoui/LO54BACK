@@ -12,9 +12,8 @@ import java.util.List;
 
 @Repository
 public interface CourseRepository extends JpaRepository<Course, Long> {
-    List<Course> findByTitleContaining(String keyword);
-    List<Course> findCoursesByLocation_IdLocation(Long location);
-    @Query(value = "SELECT CO.* FROM COURSE CO INNER JOIN COURSE_SESSION CS ON CO.ID_COURSE = CS.ID_COURSE WHERE DATE(:date) BETWEEN START_DATE AND END_DATE", nativeQuery = true)
-    List<Course> findByDate(Date date);
-
+//   List<Course> findByTitleContaining(String keyword);
+//    List<Course> findCoursesByLocation_IdLocation(Long location);
+//    @Query(value = "SELECT CO.* FROM COURSE CO INNER JOIN COURSE_SESSION CS ON CO.ID_COURSE = CS.ID_COURSE WHERE DATE(:date) BETWEEN START_DATE AND END_DATE", nativeQuery = true)
+//    List<Course> findByDate(Date date);
 }

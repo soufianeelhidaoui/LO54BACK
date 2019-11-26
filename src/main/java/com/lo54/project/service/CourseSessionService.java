@@ -67,4 +67,27 @@ public class CourseSessionService {
         return repository.findById(id).get();
     }
 
+    /**
+     * Get a list of courses by title
+     * @param courseTitle
+     * @return [CourseSession]
+     */
+    public List<CourseSession> getCourseByFilterCourse(String courseTitle) {
+        return  repository.findByCourse_Title(courseTitle);
+    }
+
+    /**
+     * Get a list of courses by title, and
+     * @param courseTitle
+     * @return [CourseSession]
+     */
+    public List<CourseSession> getCourseByFilterCourseAndDate(String courseTitle, Date startDate, Date endDate) {
+        return  repository.findByCourse_TitleAndStartDateBeforeAndEndDateAfter(courseTitle, startDate, endDate);
+    }
+    public List<CourseSession> getCourseByFilterCourseAndLocation(String courseTitle, String city) {
+        return  repository.findByCourse_TitleAndLocation_City(courseTitle, city);
+    }
+    public List<CourseSession> getCourseByFilterAll(String course,Date startDate, Date endDate,  String city) {
+        return repository.findByCourse_TitleAndStartDateBeforeAndEndDateAfterAndLocation_City(course,startDate,endDate,city);
+    }
 }

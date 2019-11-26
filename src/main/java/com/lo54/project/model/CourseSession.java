@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,8 +20,11 @@ import java.util.Date;
 @Entity
 public class CourseSession {
 
+    public CourseSession(Long idCourseSession) {
+        this.idCourseSession = idCourseSession;
+    }
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idCourseSession;
     @NotNull
    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
@@ -32,12 +36,16 @@ public class CourseSession {
     private Long max;
 
     //------------
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_course", nullable = false, updatable = false)
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "idCourse", nullable = false, updatable = false)
     private Course course;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_client")
-    private Client client;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "idLocation", nullable = false, updatable = false)
+    private Location location;
+
+    //------------
+    @OneToMany(mappedBy="courseSession", fetch = FetchType.EAGER)
+    private List<Client> client ;
     //------------
 }

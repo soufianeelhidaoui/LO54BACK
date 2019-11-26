@@ -1,0 +1,19 @@
+type Client{
+    idClient: ID!
+    lastName: String
+    firstName: String
+    address: String
+    phone: String
+    email: String
+    courseSession: CourseSession
+}
+
+
+extend type Query{
+    getClients: [Client]
+    getClient(idCourse: ID): Client
+}
+
+type Mutation{
+    CreateClient(lastName: String,firstName: String,address: String,phone: String,email: String, courseSessionId: ID!): Client
+}

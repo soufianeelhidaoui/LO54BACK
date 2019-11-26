@@ -53,8 +53,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
@@ -129,10 +129,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="JUnit.ProjectApplicationTests" />
-      <item itemvalue="Spring Boot.ProjectApplication" />
-    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -141,12 +137,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@daacc413" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@75aeff69" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@daacc413" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@39f6c16a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@75aeff69" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c063daab" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -223,7 +219,14 @@
       <workItem from="1571323509468" duration="2171000" />
       <workItem from="1571326495190" duration="343000" />
       <workItem from="1571327048853" duration="41000" />
-      <workItem from="1571327095386" duration="343000" />
+      <workItem from="1571327095386" duration="653000" />
+      <workItem from="1571335111785" duration="820000" />
+      <workItem from="1571388827695" duration="29000" />
+      <workItem from="1571420640754" duration="44000" />
+      <workItem from="1571468361015" duration="3137000" />
+      <workItem from="1571746125048" duration="102000" />
+      <workItem from="1574773327104" duration="1236000" />
+      <workItem from="1574776192779" duration="4818000" />
     </task>
     <servers />
   </component>

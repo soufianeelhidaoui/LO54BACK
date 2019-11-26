@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,7 +18,7 @@ import javax.validation.constraints.NotNull;
 public class Course {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idCourse;
     @NotNull
     private String codeCourse;
@@ -25,9 +26,8 @@ public class Course {
     private String title;
 
     //------------
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_location" , nullable = false, updatable = false)
-    private Location location;
+    @OneToMany(mappedBy="course", fetch = FetchType.EAGER)
+    private List<CourseSession> courseSessions ;
     //------------
 
 

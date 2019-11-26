@@ -2,19 +2,17 @@ type Course{
     idCourse: ID!
     codeCourse: String
     title: String
-    location: Location
+    courseSessions: [CourseSession]
 }
 
 extend type Query {
     getCourses: [Course]
     getCourse(id: ID!): Course
-    getCourseByTitle(title: String!): [Course]
-    getCourseByLocation(id: ID!): [Course]
-    getCourseByAvailability(date: String): [Course]
 }
 
 extend type Mutation {
-    newCourse(codeCourse: String, title: String,  location: ID!): Course
-    updateCourse(id: ID!, codeCourse: String, title: String,  location: ID!): Course
+    newCourse(codeCourse: String, title: String): Course
+    updateCourse(id: ID!, codeCourse: String, title: String): Course
     deleteCourse(id: ID!): Boolean
 }
+

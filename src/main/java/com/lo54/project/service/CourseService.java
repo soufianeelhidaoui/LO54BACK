@@ -36,7 +36,6 @@ public class CourseService {
         Course record = repository.findById(course.getIdCourse()).get();
         record.setCodeCourse(course.getCodeCourse());
         record.setTitle(course.getTitle());
-        record.setLocation(course.getLocation());
         return repository.save(record);
     }
 
@@ -65,32 +64,6 @@ public class CourseService {
      */
     public Course findById(Long id){
         return repository.findById(id).get();
-    }
-
-    /**
-     * Get the list of courses which contain a string in their titles
-     * @param keyword
-     * @return [Course]
-     */
-    public List<Course> findByTitleContaining(String keyword){
-        return repository.findByTitleContaining(keyword);
-    }
-
-    /**
-     * Get the list of courses by a location ID
-     * @param location
-     * @return [Course]
-     */
-    public List<Course> findCoursesByLocation_IdLocation(Long location) { return  repository.findCoursesByLocation_IdLocation(location); }
-
-    /**
-     * Get the list of courses which have available sessions in a given date
-     * @param date
-     * @return [Course]
-     */
-    public List<Course> findByDate(Date date) {
-        return repository.findByDate(date);
-
     }
 
 }

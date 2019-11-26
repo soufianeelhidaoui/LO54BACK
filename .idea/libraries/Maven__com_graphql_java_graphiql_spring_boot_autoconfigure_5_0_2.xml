@@ -3,9 +3,7 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphiql-spring-boot-autoconfigure/5.0.2/graphiql-spring-boot-autoconfigure-5.0.2.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphiql-spring-boot-autoconfigure/5.0.2/graphiql-spring-boot-autoconfigure-5.0.2-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphiql-spring-boot-autoconfigure/5.0.2/graphiql-spring-boot-autoconfigure-5.0.2-sources.jar!/" />
     </SOURCES>
